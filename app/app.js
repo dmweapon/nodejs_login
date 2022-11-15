@@ -12,5 +12,7 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 app.use("/", home); // use : 미들웨어 등록 메소드
+app.use(express.static(`${__dirname}/src/public`)); // static은 정적파일의 기본 위치를 설정함. ${__dirname}는 현재위치를 의미.
+
 
 module.exports = app;
