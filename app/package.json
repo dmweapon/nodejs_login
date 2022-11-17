@@ -4,17 +4,17 @@
   "description": "",
   "main": "app.js",
   "bin": {
-    "node_login" : "startup.js"
+    "node_login": "startup.js"
   },
   "scripts": {
-    "start" : "nodemon ./bin/startup.js",
+    "start": "nodemon ./bin/startup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "ejs": "^3.1.8",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -3,6 +3,10 @@
 // 모듈
 const express = require("express");
 const app = express();
+/* MongoDB접속시 사용
+const connect = require("./schemas")
+connect(); // ./schemas 디렉토리의 index.js 파일 실행
+*/
 
 //라우팅
 const home = require("./src/routes/home"); // 해당 경로의 디렉토리에 있는 js파일들을 읽어옴
