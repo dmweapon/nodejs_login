@@ -10,7 +10,8 @@ module.exports = ()=>{
         mongoose.connect(
             "mongodb://localhost:27017/til", // til 이라는 db 사용
             {
-                dbName: "til"
+                dbName: "til",
+                useNewUrlParser: true,
             },
             error => {
                 if (error) {
